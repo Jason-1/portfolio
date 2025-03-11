@@ -74,8 +74,16 @@ export const projects = [
     title: "Demo Shopping Website",
     des: "A shopping website built with React and next.js",
     img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/drizzle.svg"],
     link: "https://github.com/Jason-1/sprout-scribble",
+  },
+  {
+    id: 2,
+    title: "RPG Character builder",
+    des: "A character builder for Pathfinder 2nd edition",
+    img: "/p1.svg",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg"],
+    link: "https://github.com/Jason-1/pathfinder-character-builder",
   },
 ];
 
