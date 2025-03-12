@@ -8,12 +8,13 @@ export const gridItems = [
   {
     id: 1,
     title:
-      "I am experienced at overcoming language barriers during open communication",
+      "A software Engineering honours graduate from the University of Waikato",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
-    imgClassName: "w-full h-full",
+    imgClassName:
+      "lg:h-64 flex items-center justify-center mx-auto lg:mt-16 hidden lg:block",
     titleClassName: "justify-end",
-    img: "/b1.svg",
+    img: "waikato.png",
     spareImg: "",
   },
   {

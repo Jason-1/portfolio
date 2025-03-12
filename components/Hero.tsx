@@ -23,13 +23,8 @@ const Hero = () => {
 
           <TextGenerateEffect
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
-            words="Demo Text with a lot more words"
+            words="I'm Jason, a Next.js Developer based in New Zealand "
           />
-
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg xl:text-2xl">
-            {" "}
-            Hi, I&apos;m Jason, a Next.js Developer based in New Zealand{" "}
-          </p>
 
           <a href="#about">
             <MagicButton
