@@ -3,8 +3,7 @@
 import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "./GradientBg";
 import { useState } from "react";
-import animationData from "@/data/confetti.json";
-import Lottie from "react-lottie";
+
 import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
 import { FaLocationArrow } from "react-icons/fa";
@@ -143,16 +142,7 @@ export const BentoGridItem = ({
 
           {id === 6 && (
             <div className="mt-5 relative">
-              <div className={`absolute -bottom-5 right-0`}>
-                <Lottie
-                  options={{
-                    loop: copied,
-                    autoplay: copied,
-                    animationData,
-                    rendererSettings: { preserveAspectRatio: "xMidYMid slice" },
-                  }}
-                />
-              </div>
+              <div className={`absolute -bottom-5 right-0`}></div>
               <MagicButton
                 title={copied ? "Email copied" : "Copy my Email"}
                 icon={<IoCopyOutline />}
@@ -163,7 +153,6 @@ export const BentoGridItem = ({
             </div>
           )}
 
-          {/* TODO - Fix button defaulting to max width on small devices */}
           {id === 2 && (
             <div className="absolute inset-0 flex items-center justify-center mt-12 lg:mt-24 ">
               <MagicButton
