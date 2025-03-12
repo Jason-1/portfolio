@@ -12,7 +12,7 @@ export const gridItems = [
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName:
-      "lg:h-64 flex items-center justify-center mx-auto lg:mt-16 hidden lg:block",
+      "lg:h-64 flex items-center justify-center mx-auto lg:mt-16 hidden lg:block opacity-70",
     titleClassName: "justify-end",
     img: "waikato.png",
     spareImg: "",
