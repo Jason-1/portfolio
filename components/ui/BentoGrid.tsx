@@ -120,7 +120,7 @@ export const BentoGridItem = ({
                 {["React.js", "Next.js", "Typescript"].map((item) => (
                   <span
                     key={item}
-                    className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                    className="py-0 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
                   >
                     {item}
                   </span>
@@ -164,13 +164,15 @@ export const BentoGridItem = ({
           )}
 
           {id === 2 && (
-            <MagicButton
-              title="GitHub"
-              icon={<FaLocationArrow className="ms-3" color="#CBACF9" />}
-              position="right"
-              otherClasses="!bg-[$161a31]"
-              handleClick={handleClick}
-            />
+            <div className="absolute inset-0 flex items-center justify-center mt-24">
+              <MagicButton
+                title="GitHub"
+                icon={<FaLocationArrow className="ms-3" color="#CBACF9" />}
+                position="right"
+                otherClasses="!bg-[$161a31]"
+                handleClick={handleClick}
+              />
+            </div>
           )}
         </div>
       </div>
