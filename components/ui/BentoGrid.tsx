@@ -7,6 +7,7 @@ import animationData from "@/data/confetti.json";
 import Lottie from "react-lottie";
 import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
+import { FaLocationArrow } from "react-icons/fa";
 
 export const BentoGrid = ({
   className,
@@ -53,6 +54,10 @@ export const BentoGridItem = ({
   const handleCopy = () => {
     navigator.clipboard.writeText("jason.j.cutts@gmail.com");
     setCopied(true);
+  };
+
+  const handleClick = () => {
+    window.location.href = "https://github.com/Jason-1/portfolio";
   };
 
   return (
@@ -110,7 +115,7 @@ export const BentoGridItem = ({
           </div>
 
           {id === 3 && (
-            <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
+            <div className="flex gap-1 lg:gap-5 w-fit absolute right-0 lg:right-0">
               <div className="flex flex-col gap-3 lg:gap-8">
                 {["React.js", "Next.js", "Typescript"].map((item) => (
                   <span
@@ -124,7 +129,7 @@ export const BentoGridItem = ({
               </div>
               <div className="flex flex-col gap-3 lg:gap-8">
                 <span className="py-4 px-3 rounded-lg text-center bg-[#10132e]" />
-                {["1", "2", "3"].map((item) => (
+                {["C#", "Java", "Python"].map((item) => (
                   <span
                     key={item}
                     className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
@@ -156,6 +161,16 @@ export const BentoGridItem = ({
                 handleClick={handleCopy}
               />
             </div>
+          )}
+
+          {id === 2 && (
+            <MagicButton
+              title="GitHub"
+              icon={<FaLocationArrow className="ms-3" color="#CBACF9" />}
+              position="right"
+              otherClasses="!bg-[$161a31]"
+              handleClick={handleClick}
+            />
           )}
         </div>
       </div>
