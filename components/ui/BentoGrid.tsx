@@ -165,7 +165,7 @@ export const BentoGridItem = ({
 
           {/* TODO - Fix button defaulting to max width on small devices */}
           {id === 2 && (
-            <div className="absolute inset-0 flex items-center justify-center mt-4 lg:mt-24">
+            <div className="absolute inset-0 flex items-center justify-center mt-12 lg:mt-24 ">
               <MagicButton
                 title="GitHub"
                 icon={<FaLocationArrow className="ms-3" color="#CBACF9" />}

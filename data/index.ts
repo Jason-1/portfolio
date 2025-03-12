@@ -21,9 +21,10 @@ export const gridItems = [
     id: 2,
     title: "Check out the Repo for this site",
     description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
+    className:
+      "lg:col-span-2 md:col-span-3 md:row-span-2 items-center justify-center",
     imgClassName: "",
-    titleClassName: "justify-start",
+    titleClassName: "text-center",
     img: "",
     spareImg: "",
   },
