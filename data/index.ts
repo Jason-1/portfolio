@@ -14,7 +14,7 @@ export const gridItems = [
     imgClassName:
       "lg:h-64 flex items-center justify-center mx-auto lg:mt-16 hidden lg:block opacity-70",
     titleClassName: "justify-end",
-    img: "/waikato.png",
+    img: "Waikato.png",
     spareImg: "",
   },
   {
