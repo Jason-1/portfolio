@@ -11,12 +11,12 @@ const RecentProjects = () => {
         <span className="text-purple">recent projects</span>
       </h1>
       <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10">
-        {projects.map(({ id, title, des, img, iconLists, link }) => (
+        {projects.map(({ id, title, des, img, iconLists, link, repoLink }) => (
           <div
             key={id}
-            className="lg:min-h-[41rem] h-[32rem] flex items-center justify-center sm:w-[570px] w-[80vw]"
+            className="lg:min-h-[41rem] h-[32rem] flex items-center justify-center sm:w-[570px] w-[80vw] "
           >
-            <PinContainer title={link} href={link}>
+            <div className="border border-white/[0.1] rounded-2xl px-4 py-4">
               <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh] mb-10">
                 <div className="relative w-full h-full overflow-hidden lg: rounded-3xl bg-[#13162d]">
                   <img src="/bg.png" alt="bg.img" />
@@ -42,14 +42,36 @@ const RecentProjects = () => {
                     </div>
                   ))}
                 </div>
-                <div className="flex justify-center items-center">
-                  <p className="flex lg:text-xl md:text-xs text-sm text-purple">
+              </div>
+              <div className="flex justify-between items-center px-4 mt-4">
+                <div className="flex items-center">
+                  <a
+                    className="flex lg:text-xl md:text-xs text-sm text-purple"
+                    href={repoLink}
+                  >
                     Check Repo
-                  </p>
+                  </a>
                   <FaLocationArrow className="ms-3" color="#CBACF9" />
                 </div>
+                <div className="flex items-center">
+                  {link ? (
+                    <>
+                      <a
+                        className="flex lg:text-xl md:text-xs text-sm text-purple"
+                        href={link}
+                      >
+                        Visit Site
+                      </a>
+                      <FaLocationArrow className="ms-3" color="#CBACF9" />
+                    </>
+                  ) : (
+                    <a className="flex lg:text-xl md:text-xs text-sm text-purple">
+                      Coming Soon
+                    </a>
+                  )}
+                </div>
               </div>
-            </PinContainer>
+            </div>
           </div>
         ))}
       </div>

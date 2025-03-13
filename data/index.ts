@@ -79,6 +79,7 @@ export const projects = [
     img: "cart.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/drizzle.svg"],
     link: "https://www.jasonshop.store/",
+    repoLink: "https://github.com/Jason-1/sprout-scribble",
   },
   {
     id: 2,
@@ -86,7 +87,8 @@ export const projects = [
     des: "A character builder for Pathfinder 2nd edition",
     img: "Pathfinder_RPG.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg"],
-    link: "https://github.com/Jason-1/pathfinder-character-builder",
+    link: "",
+    repoLink: "https://github.com/Jason-1/pathfinder-character-builder",
   },
 ];
 
