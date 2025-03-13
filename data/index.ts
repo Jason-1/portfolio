@@ -78,7 +78,7 @@ export const projects = [
     des: "A shopping website built with React and next.js",
     img: "cart.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/drizzle.svg"],
-    link: "https://github.com/Jason-1/sprout-scribble",
+    link: "https://www.jasonshop.store/",
   },
   {
     id: 2,
