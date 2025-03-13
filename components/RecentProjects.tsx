@@ -20,7 +20,14 @@ const RecentProjects = () => {
                 <div className="relative w-full h-full overflow-hidden lg: rounded-3xl bg-[#13162d]">
                   <img src="/bg.png" alt="bg.img" />
                 </div>
-                <img src={img} alt={title} className="z-10 absolute" />
+
+                {link ? (
+                  <a className="z-10 absolute" href={link}>
+                    <img src={img} alt={title} />
+                  </a>
+                ) : (
+                  <img src={img} alt={title} className="z-10 absolute" />
+                )}
               </div>
               <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
                 {title}
