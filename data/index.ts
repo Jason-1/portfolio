@@ -51,7 +51,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building an RPG character builder",
+    title: "Currently building an RPG Character Builder",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -83,7 +83,7 @@ export const projects = [
   },
   {
     id: 2,
-    title: "RPG Character builder",
+    title: "RPG Character Builder",
     des: "A character builder for Pathfinder 2nd edition",
     img: "Pathfinder_RPG.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg"],
