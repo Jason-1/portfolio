@@ -22,11 +22,22 @@ const RecentProjects = () => {
                 </div>
 
                 {link ? (
-                  <a className="z-10 absolute" href={link}>
-                    <img src={img} alt={title} />
+                  <a
+                    className="z-10 absolute flex justify-center items-center w-full h-full"
+                    href={link}
+                  >
+                    <img
+                      className="w-3/4 h-3/4 object-contain"
+                      src={img}
+                      alt={title}
+                    />
                   </a>
                 ) : (
-                  <img src={img} alt={title} className="z-10 absolute" />
+                  <img
+                    src={img}
+                    alt={title}
+                    className="z-10 absolute w-3/4 h-3/4 object-contain"
+                  />
                 )}
               </div>
               <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
