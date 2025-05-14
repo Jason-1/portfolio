@@ -104,7 +104,7 @@ export const workExperience = [
     id: 2,
     title: "IT Support Engineer/Web Developer",
     desc: "Provided L2 support to clients. Assited in the development of front end features to our React based SaaS platform.",
-    className: "md:col-span-2", // change to md:col-span-2
+    className: "md:col-span-2",
     thumbnail: "/exp2.svg",
   },
 ];
