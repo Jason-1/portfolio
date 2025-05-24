@@ -19,7 +19,7 @@ const Hero = () => {
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <TextGenerateEffect
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
-            words="I'm Jason, a Software Engineering graduate based in New Zealand"
+            words="I'm Jason, a Junior Developer based in New Zealand"
           />
 
           <a href="#about">
